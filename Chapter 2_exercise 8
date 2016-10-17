@@ -1,1 +1,8 @@
+print('Please input time in the 24 hour system e.g. 2 pm will be 1400')
 
+a = int(input('what time is it now?'))
+b = int(input('In how long will the alarm ring?'))
+
+TimeAlarmRings = (a + b) % 2400
+
+print('The alarm will ring at %d hours' %TimeAlarmRings)
