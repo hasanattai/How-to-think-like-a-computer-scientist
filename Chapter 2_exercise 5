@@ -1,0 +1,7 @@
+r = 0.08
+n = 12
+t = int(input('How many years?'))
+
+power = n * t
+A = p * (1 + (r / n)) ** (n * t)
+print('$ %.2f' % A)
