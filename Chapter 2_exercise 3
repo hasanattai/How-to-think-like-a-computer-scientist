@@ -1,0 +1,5 @@
+#Solves the equation in exercise 2
+question_2 = 6 * (1 - 2)
+
+print(question_2)
+#comments make the python interpreter ignore the piece of text after the hashtag
