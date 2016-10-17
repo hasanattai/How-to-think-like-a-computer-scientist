@@ -1,0 +1,3 @@
+TimeAlarmRings = (1400 + 5100) % 2400
+
+print(TimeAlarmRings)
