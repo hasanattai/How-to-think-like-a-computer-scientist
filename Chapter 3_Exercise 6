@@ -1,0 +1,30 @@
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+wn.title('Exercise 6')
+
+tess = turtle.Turtle()
+
+bob = turtle.Turtle()
+
+alex = turtle.Turtle()
+
+dumdum = turtle.Turtle()
+
+for i in range(4):
+    alex.forward(50)
+    alex.left(90)
+
+for i in range(3):
+    tess.forward(50)
+    tess.left(120)
+
+for i in range(6):
+    bob.forward(50)
+    bob.left(60)
+
+for i in range(8):
+    dumdum.forward(50)
+    dumdum.left(45)
+
+wn.mainloop()
