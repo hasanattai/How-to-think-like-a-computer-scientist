@@ -8,7 +8,7 @@ def draw_square(t, sz):
 
 wn = turtle.Screen()
 wn.bgcolor('lightgreen')
-wn.title('Exercise 1 ¯\_(ツ)_/¯')
+wn.title('Exercise 2 ¯\_(ツ)_/¯')
 
 bob = turtle.Turtle()
 bob.color('pink')
