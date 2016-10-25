@@ -1,0 +1,28 @@
+import turtle
+
+
+def draw_square(t, sz):
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+wn = turtle.Screen()
+wn.bgcolor('lightgreen')
+wn.title('Exercise 1 ¯\_(ツ)_/¯')
+
+bob = turtle.Turtle()
+bob.color('pink')
+bob.pensize(5)
+x = 20
+for n in range(4):
+    draw_square(bob, x)
+    bob.penup()
+    bob.left(180)
+    bob.forward(10)
+    bob.left(90)
+    bob.forward(10)
+    bob.left(90)
+    bob.pendown()
+    x = x + 20
+
+wn.mainloop()
