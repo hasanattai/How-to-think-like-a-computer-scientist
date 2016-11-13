@@ -1,0 +1,16 @@
+NumberOfDay = int(input('what number is today in the week from 0-6? '))
+
+if NumberOfDay == 0:
+    print('Today is Sunday')
+elif NumberOfDay == 1:
+    print('Today is Monday')
+elif NumberOfDay == 2:
+    print('Today is Tuesday')
+elif NumberOfDay == 3:
+    print('Today is Wednesday')
+elif NumberOfDay == 4:
+    print('Today is Thursday')
+elif NumberOfDay == 5:
+    print('Today is Friday')
+elif NumberOfDay == 6:
+    print('Today is Saturday')
