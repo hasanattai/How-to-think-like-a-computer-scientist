@@ -1,0 +1,18 @@
+StartingDay = int(input('What day number did you start your holiday on? '))
+Duration = int(input('After how many days did you come back? '))
+NumberOfDay = (StartingDay + Duration) % 7
+
+if NumberOfDay == 0:
+    print('You came back on Sunday')
+elif NumberOfDay == 1:
+    print('You came back on Monday')
+elif NumberOfDay == 2:
+    print('You came back on Tuesday')
+elif NumberOfDay == 3:
+    print('You came back on Wednesday')
+elif NumberOfDay == 4:
+    print('You came back on Thursday')
+elif NumberOfDay == 5:
+    print('You came back on Friday')
+elif NumberOfDay == 6:
+    print('You came back on Saturday')
