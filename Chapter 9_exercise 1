@@ -1,0 +1,7 @@
+def name(i):
+    return First_name + ' ' + Last_name
+
+g = ('Gabe', 'Newel')
+(First_name, Last_name) = g
+
+print(name(g))
