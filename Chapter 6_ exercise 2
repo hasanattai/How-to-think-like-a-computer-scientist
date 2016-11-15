@@ -1,0 +1,22 @@
+def day_num(xs):
+    if xs == 'Sunday':
+        return '0'
+    elif xs == 'Monday':
+        return '1'
+    elif xs == 'Tuesday':
+        return '2'
+    elif xs == 'Wednesday':
+        return '3'
+    elif xs == 'Thursday':
+        return '4'
+    elif xs == 'Friday':
+        return '5'
+    elif xs == 'Saturday':
+        return '6'
+    else:
+        return None
+
+
+Day = input('What day is it? ')
+
+print(day_num(Day))
