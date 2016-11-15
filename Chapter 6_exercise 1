@@ -1,0 +1,14 @@
+def turn_clockwise(xs):
+    if xs == 'N':
+        return 'E'
+    elif xs == 'E':
+        return 'S'
+    elif xs == 'S':
+        return 'W'
+    elif xs == 'W':
+        return 'N'
+
+
+Direction = input('which point on the compass? ')
+
+print(turn_clockwise(Direction))
