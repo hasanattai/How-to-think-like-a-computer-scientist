@@ -1,6 +1,6 @@
 def count_odd(n):
     count = 0
-    for i in (n):
+    for i in n:
         if i % 2 == 1:
             count += 1
     return count
