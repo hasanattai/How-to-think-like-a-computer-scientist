@@ -1,0 +1,6 @@
+def count_letters(x, y):
+    count = 0
+    for char in x:
+        if char == y:
+            count += 1
+    return count
