@@ -1,0 +1,78 @@
+import turtle
+
+turtle.setup(400, 500)
+wn = turtle.Screen()
+wn.title("Handling keypresses!")
+wn.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.pensize(1)
+
+def h1():
+   tess.forward(30)
+
+def h2():
+   tess.left(45)
+
+def h3():
+   tess.right(45)
+
+def h4():
+    wn.bye()
+
+def h5():
+    tess.color("red")
+
+def h6():
+    tess.color("green")
+
+def h7():
+    tess.color("blue")
+
+state_num = 0
+
+def h8():
+    global state_num
+    if state_num == 0:
+        tess.pensize(5)
+        state_num = 1
+    elif state_num == 1:
+        tess.pensize(10)
+        state_num = 2
+    elif state_num == 2:
+        tess.pensize(15)
+        state_num = 3
+    elif state_num == 3:
+        tess.pensize(20)
+        state_num = 4
+    else:
+        tess.pensize(20)
+
+def h9():
+    global state_num
+    if state_num == 4:
+        tess.pensize(15)
+        state_num = 3
+    elif state_num == 3:
+        tess.pensize(10)
+        state_num = 2
+    elif state_num == 2:
+        tess.pensize(5)
+        state_num = 1
+    elif state_num == 1:
+        tess.pensize(1)
+        state_num = 0
+    else:
+        tess.pensize(1)
+
+wn.onkey(h1, "Up")
+wn.onkey(h2, "Left")
+wn.onkey(h3, "Right")
+wn.onkey(h4, "q")
+wn.onkey(h5, "r")
+wn.onkey(h6, "g")
+wn.onkey(h7, "b")
+wn.onkey(h8, "+")
+wn.onkey(h9, "-")
+
+wn.listen()
+wn.mainloop()
