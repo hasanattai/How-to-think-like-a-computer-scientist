@@ -1,0 +1,22 @@
+class Point:
+
+    def __init__(self):
+        self.x = 0
+        self.y = 0
+
+def distance(x1, y1, x2, y2):
+    dx = x2 - x1
+    dy = y2 - y1
+    dsquared = dx*dx + dy*dy
+    result = dsquared**0.5
+    print(result)
+
+p = Point()
+q = Point()
+
+p.x = int(input("input x1"))
+p.y = int(input("input y1"))
+q.x = int(input("input x2"))
+q.y = int(input("input y2"))
+
+distance(p.x, p.y, q.x, p.y)
