@@ -1,0 +1,14 @@
+string = input('Enter a string: ')
+string = string.lower()
+lib = {}
+
+for ltr in string:
+    lib[ltr] = lib.get(ltr, 0) + 1
+del lib[' ']
+letters = list(lib.items())
+letters.sort()
+
+print(letters)
+for letter in letters:
+    print(letter[0], letter[1])
+print(lib)
