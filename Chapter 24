@@ -1,0 +1,10 @@
+def print_list(node):
+    print("[",end = "")
+    while node is not None:
+        if node.next == None:
+            end = "]"
+        else:
+            end = ", "
+        print(node, end=end)
+        node = node.next
+    print()
