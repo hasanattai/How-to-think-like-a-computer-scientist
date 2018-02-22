@@ -47,13 +47,26 @@ def draw_sierpinski(length, depth):
         t.bk(length/2)
         t.right(60)
 
+def colored_sierpinski(length, depth):
+    t.pencolor('red')
+    draw_sierpinski(length, depth)
+    t.fd(length)
+    t.pencolor('blue')
+    draw_sierpinski(length, depth)
+    t.pencolor('red')
+    t.bk(length)
+    t.left(60)
+    t.fd(length)
+    t.right(60)
+    t.pencolor('yellow')
+    draw_sierpinski(length, depth)
 
 
 window = turtle.Screen()
 t = turtle.Turtle()
-draw_sierpinski(300,2)
+colored_sierpinski(100,2)
 window.exitonclick()
 
-t = turtle.Turtle()
-order = int(input("input order: "))
-cesaro(t, order, 300)
+##t = turtle.Turtle()
+##order = int(input("input order: "))
+##cesaro(t, order, 300)
